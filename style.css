@@ -1,0 +1,160 @@
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    font-family: "Quicksand", sans-serif;
+    color: white;
+     background-image: linear-gradient(135deg,RGB(83 67 225) , rgb(237, 183, 113) , rgb(237, 183, 113) , RGB(83 67 225) ); 
+
+    /* background-image: radial-gradient(red 50%,chartreuse -50%); */
+
+    
+
+}
+.container{
+    width: clamp(600px, 60vw, 1200px);
+    
+    display: flex;
+    flex-direction: column;
+    margin: 10px ;
+    padding: 10px;
+    border-radius: 10px;
+   background: white;
+   
+}
+.upper{
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+margin: 10px;
+padding: 10px;
+
+min-height:25% ;
+align-items: center;
+
+color: black;
+}
+.line1{
+    justify-content: center;
+}
+.lower{
+    display: flex;
+    flex-direction: row;
+    
+    
+   padding: 10px;
+   gap: 15px;
+   /* min-height: 80%; */
+   justify-content:center;
+   
+}
+.cards{
+    height: 100%;
+    
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 42%;
+    border: 1px solid gray;
+
+    box-shadow: 1px 1px 1px gray;
+    background-color: RGB(83 67 225);
+    border-radius: 15px;
+    
+   
+}
+.top{
+    
+    padding: 10px;
+    
+    
+}
+.middle{
+    padding: 20px;
+  
+    height: 55%;
+    }
+.btn1{
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    font-weight: 600;
+}
+.btn2{
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    font-weight: 600;
+    background-color: rgb(237, 183, 113);
+} 
+.btn3{
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    font-weight: 600;
+    background-color: RGB(83 67 225);
+    color:white;
+}     
+#best{
+    color:#5f36b3 ;
+    text-decoration: underline;
+}
+i{
+    color: #7343D4;
+}
+#month{
+    color:grey;
+}#month1{
+    color: RGB(202 202 202);
+}
+ul{
+    color:RGB(202 202 202);
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+}
+
+
+.second{
+    background-color:transparent ;
+    color: black;
+}
+.second li{
+    color: grey;
+}
+@media(max-width:798px){
+    .lower{
+        flex-direction: column;
+        height: auto;
+    }
+    body{
+        height: auto;
+    }
+    .container{
+        height: auto;
+    }
+    .upper{
+        min-height: 10%;
+    }
+    .cards{
+        width: 70%;
+    }.lower{
+        align-items: center;
+    }
+}
+@media(max-width:500px){
+    .cards{
+        width: 100%;
+    }
+}
